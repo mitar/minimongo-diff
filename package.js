@@ -5,7 +5,7 @@ Package.describe({
 });
 
 Package.on_test(function (api) {
-  api.use(['tinytest', 'test-helpers', 'mongo', 'underscore', 'reactive-var', 'random'], 'server');
+  api.use(['tinytest', 'test-helpers', 'mongo', 'underscore', 'reactive-var', 'random', 'ejson', 'minimongo', 'mongo-id'], 'server');
 
   api.add_files([
     'tests.js',
