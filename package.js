@@ -5,10 +5,9 @@ Package.describe({
 });
 
 Package.on_test(function (api) {
-  api.use(['tinytest', 'test-helpers', 'mongo', 'underscore', 'reactive-var', 'random', 'ejson', 'minimongo', 'mongo-id'], 'server');
+  api.use(['tinytest', 'test-helpers', 'mongo', 'underscore', 'reactive-var', 'random', 'ejson', 'minimongo', 'mongo-id']);
 
   api.add_files([
-    'tests.js',
-    'meteor/packages/minimongo/minimongo_tests.js'
-  ], 'server');
+    'minimongo_tests.js'
+  ]);
 });
